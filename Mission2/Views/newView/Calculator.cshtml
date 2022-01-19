@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Grade Calculator";
+}
+
+<head>
+    <title>@ViewData["Title"]</title>
+</head>
+<!-- A "Grade Calculator" form that takes as input a percentage scored for each grade
+category listed in the syllabus -->
+<h2 class="p-3 mb-2 bg-primary text-white"> Grade Calculator </h2>
+<form>
+    <label>Enter your Assignments grade (e.g. 78):</label>
+    <input id="assignments" style="color:red; width:50px" required="" type="number" />
+    <br />
+    <label>Enter your Group project grade (e.g. 78):</label>
+    <input id="group" style="color:red; width:50px" required=""  type="number"/>
+    <br />
+    <label>Enter your Quizzes grade (e.g. 78):</label>
+    <input id="quizzes" style="color:red; width:50px" required="" type="number"/>
+    <br />
+    <label>Enter your Exams grade (e.g. 78):</label>
+    <input id="exams" style="color:red; width:50px" required="" type="number"/>
+    <br />
+    <label>Enter your intex grade (e.g. 78):</label>
+    <input id="intex" style="color:red; width:50px" required="" type="number"/>
+    <br />
+    <input id="btn" type="button" value="calculate grade" required="" type="number"/>
+</form>
+
+<script src="~/js/GradeCalculator.js"></script>
+
+
+
